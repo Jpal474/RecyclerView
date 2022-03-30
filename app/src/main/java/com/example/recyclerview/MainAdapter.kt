@@ -23,13 +23,14 @@ class MainAdapter(private val videos: Array<JSONObject>): RecyclerView.Adapter<M
         binding.tvVideoTitle.setText(video.getString("title"))
         binding.tvChannelName.setText(video.getString("channel"))
         binding.tvVideoViews.setText(video.getString("views"))
-        binding.tvDatePosted.setText(video.getString("5 days ago"))
-        binding.tvVideoDuration.setText(video.getString("06:00"))
+        binding.tvDatePosted.setText(video.getString("datePosted"))
+        binding.tvVideoDuration.setText(video.getString("duration"))
         binding.ivVideoThumbnail.setImageResource(R.drawable.video_placeholder)
         binding.ivAvatar.setImageResource(R.drawable.avatar_placeholder)
 
 
     }
+
 
     }
 }
